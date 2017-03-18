@@ -1,5 +1,5 @@
 {
-    "name": "goenitz/simple-dom",
+    "name": "goenitz/simple-model",
     "description": "A laravel eloquent-like mysql class",
     "keywords": ["laravel", "eloquent", "model"],
     "homepage": "https://github.com/tianyirenjian/simpleModel",
