@@ -60,7 +60,7 @@ class Article extends Model
 #### 添加数据
 
 ```php
-use App\Model;
+use App\Article;
 
 Article::create([
     'title' => 'test',
