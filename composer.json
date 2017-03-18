@@ -1,0 +1,27 @@
+{
+    "name": "goenitz/simple-dom",
+    "description": "A laravel eloquent-like mysql class",
+    "keywords": ["laravel", "eloquent", "model"],
+    "homepage": "https://github.com/tianyirenjian/simpleModel",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.4",
+        "symfony/var-dumper": "^3.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "goenitz",
+            "email": "179063828@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Goenitz\\SimpleModel\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
