@@ -245,8 +245,8 @@ $connection = \Goenitz\SimpleModel\Model::$connection;
 
 #### todo
 
-where, orWhere, whereIn 方法的优化和修复
-表之间的关联
+- where, orWhere, whereIn 方法的优化和修复
+- 表之间的关联
 
 #### change logs
 
