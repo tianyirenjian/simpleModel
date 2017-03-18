@@ -226,6 +226,24 @@ Article::destroy(5, 10, 15);
 Article::where('id', '18')->delete();
 Article::whereIn('id', [19, 20, 21])->delete();
 ```
+
+#### 格式化数据
+
+Model类实现了Jsonable和Arrayable接口，在Article类中设置 `protected $hidden = ['content']` 可设置要隐藏的列
+
+```php
+Article::find(30)->toJson();
+//{"id":"30","title":"foo"}
+
+Article::find(30)->toArray();
+/*[
+    "id" => "30",
+    "title" => "foo"
+]*/
+```
+
+对于通过where等查出来的多条数据也一样适用
+
 写在最后
 ----------
 
@@ -245,6 +263,7 @@ $connection = \Goenitz\SimpleModel\Model::$connection;
 
 #### todo
 
+- toJson, toArray 的类型问题
 - where, orWhere, whereIn 方法的优化和修复
 - 表之间的关联
 
